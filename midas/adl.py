@@ -4,10 +4,10 @@ import pandas as pd
 
 from scipy.optimize import least_squares
 
-from weights import polynomial_weights
+from .weights import polynomial_weights
 
-from mix import mix_freq,mix_freq2
-from fit import ssr, jacobian, ssr2, jacobian2
+from .mix import mix_freq,mix_freq2
+from .fit import ssr, jacobian, ssr2, jacobian2
 
 def estimate(y, yl, x, poly='beta'):
     """
